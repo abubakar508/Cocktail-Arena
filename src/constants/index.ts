@@ -1,0 +1,16 @@
+export const NavItems = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "Search",
+    path: "/search",
+  },
+  {
+    name: "Contact",
+    path: "/",
+  },
+];
+
+export const Alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];

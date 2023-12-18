@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* font face define */
+
+/* montserra font */
+@font-face {
+  font-family: montserrat;
+  src: url('/public/Montserrat/Montserrat-VariableFont_wght.tt');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* dancing Script font */
+@font-face {
+  font-family: dancing;
+  src: url('/public/DancingScript-VariableFont_wght.ttf');
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* comforta font */
+@font-face {
+  font-family: comforta;
+  src: url('/public/Comfortaa-VariableFont_wght.ttf');
 }
+
+
+/* lovers quarell font */
+@font-face {
+  font-family: lovers;
+  src: url('/public/LoversQuarrel-Regular.ttf');
+}
+

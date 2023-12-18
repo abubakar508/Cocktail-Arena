@@ -8,13 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        comforta: [ 'comforta', "Sans"],
+        dancing: [ 'Dancing Script', 'cursive'],
+        montserrat: ["montserrat","sans-serif"], 
+        lovers: ["Lovers Quarrel","sans-serif"],
+      },
+      colors: {
+        primary: '#06062a',
+        secondary: '#151538',
+        tertiary: '#242445',
+        robust: '#000000',
+        accent: {
+          DEFAULT: '#fb1cfcff',
+          hover: '#cc23cdff'
+        }
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 export default config
