@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* desktop navigation */}
       <div className=' gap-3 hidden lg:flex'>
         {NavItems.map((link: any, index: number) => (
-          <Link href={link.path} key={index} className=''>
+          <Link href={link.path} key={index} className=' bg-accent px-6 py-2 text-robust font-lovers text-4xl rounded-l-full rounded-tr-full'>
             {link.name}
           </Link>
         ))}

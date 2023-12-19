@@ -10,7 +10,7 @@ const Modal = ({ closeModal, cocktail }: any) => {
       >
         Close
       </span>
-      <div className=" bg-white rounded-md p-3 w-full lg:w-[700px] m-2 flex items-center justify-center flex-col">
+      <div className=" bg-gradient-to-b from-accent via-white to-white rounded-md pt-5 px-3 w-full lg:w-[700px] m-2 flex items-center justify-center flex-col overflow-scroll">
         <div className=" w-[300px] h-[300px] rounded-md">
           <Image
             src={cocktail.strDrinkThumb}
@@ -24,23 +24,26 @@ const Modal = ({ closeModal, cocktail }: any) => {
           <span className=" text-2xl lg:text-3xl font-bold font-montserrat text-secondary my-2">
             {cocktail.strDrink}
           </span>
-          <span className=" font-lovers Capitalize text-3xl font-black">
+          <span className=" text-secondary font-lovers Capitalize text-3xl font-black">
             {cocktail.strAlcoholic}
           </span>
+          <span className=" text-secondary font-lovers Capitalize text-3xl font-black">
+            {cocktail.strCategory}
+          </span>
         </div>
-        <div className=" font-dancing text-3xl text-center">
+        <div className=" text-secondary/50 font-montserrat text-lg text-center">
           <p>{cocktail.strInstructions}</p>
         </div>
         <div>
             {/* ingredients title */}
             <div className=" text-cente flex justify-center items-center">
             <span className=" font-lovers text-6xl text-accent font-bold">
-                Ingredients
+            Ingredients
             </span>
             </div>
           {/* ingredients */}
           <div>
-            <span className=" text-lg text-center font-montserrat flex">
+            <span className=" text-secondary text-lg text-center font-montserrat flex">
               {cocktail.strIngredient1}{" "}
               {cocktail.strIngredient2}{" "}
               {cocktail.strIngredient3}{" "}
